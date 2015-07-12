@@ -21,11 +21,24 @@
 
 	<!-- Devices -->
 		<!-- i9300 -->
+			<project name="CyanogenMod/android_device_samsung_i9300" path="device/samsung/i9300" remote="github" clone-depth="1" />
+			<project name="CyanogenMod/android_device_samsung_smdk4412-common" path="device/samsung/smdk4412-common" remote="github" clone-depth="1" />
+			<project name="CyanogenMod/android_hardware_samsung" path="hardware/samsung" remote="github" clone-depth="1" />
+			<project name="CyanogenMod/android_kernel_samsung_smdk4412" path="kernel/samsung/smdk4412" remote="github" clone-depth="1" />
 			<project name="CyanogenMod/android_packages_apps_SamsungServiceMode" path="packages/apps/SamsungServiceMode" remote="github" clone-depth="1" />
+			
 			<project name="cix1/proprietary_vendor_samsung" path="vendor/samsung" remote="github" clone-depth="1" />
+			
+			<remove-project name="CyanogenMod/android_device_samsung_i9300" />
 			<project name="cix1/android_device_samsung_i9300" path="device/samsung/i9300" remote="github" clone-depth="1" />
+			
+			<remove-project name="CyanogenMod/android_device_samsung_smdk4412-common" />
 			<project name="ArchiDroid/android_device_samsung_smdk4412-common" path="device/samsung/smdk4412-common" remote="github" clone-depth="1" />
+			
+			<remove-project name="CyanogenMod/android_hardware_samsung" />
 			<project name="ArchiDroid/android_hardware_samsung" path="hardware/samsung" remote="github" clone-depth="1" />
+			
+			<remove-project name="CyanogenMod/android_kernel_samsung_smdk4412" />
 			<project name="ArchiDroid/ArchiKernel" path="kernel/samsung/smdk4412" remote="github" revision="smdk4412" clone-depth="1" />
 		<!-- /i9300 -->
 	<!-- /Devices -->
