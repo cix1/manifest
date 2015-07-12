@@ -2,31 +2,31 @@
 <manifest>
 	<!-- Replaced projects -->
 		<remove-project name="CyanogenMod/android_bionic" />
-		<project name="ArchiDroid/android_bionic" path="bionic" remote="github" />
+		<project name="ArchiDroid/android_bionic" path="bionic" remote="github" clone-depth="1" />
 
 		<remove-project name="CyanogenMod/android_build" />
-		<project name="ArchiDroid/android_build" path="build" remote="github">
+		<project name="ArchiDroid/android_build" path="build" remote="github" clone-depth="1">
 			<copyfile src="core/root.mk" dest="Makefile" />
 		</project>
 
 		<remove-project name="CyanogenMod/android_frameworks_av" />
-		<project name="ArchiDroid/android_frameworks_av" path="frameworks/av" remote="github" />
+		<project name="ArchiDroid/android_frameworks_av" path="frameworks/av" remote="github" clone-depth="1" />
 
 		<remove-project name="CyanogenMod/android_frameworks_native" />
-		<project name="ArchiDroid/android_frameworks_native" path="frameworks/native" remote="github" />
+		<project name="ArchiDroid/android_frameworks_native" path="frameworks/native" remote="github" clone-depth="1" />
 
 		<remove-project name="CyanogenMod/android_packages_apps_Settings" />
-		<project name="ArchiDroid/android_packages_apps_Settings" path="packages/apps/Settings" remote="github" />
+		<project name="ArchiDroid/android_packages_apps_Settings" path="packages/apps/Settings" remote="github" clone-depth="1" />
 	<!-- /Replaced projects -->
 
 	<!-- Devices -->
 		<!-- i9300 -->
-			<project name="CyanogenMod/android_packages_apps_SamsungServiceMode" path="packages/apps/SamsungServiceMode" remote="github" />
-			<project name="cix1/proprietary_vendor_samsung" path="vendor/samsung" remote="github" />
-			<project name="cix1/android_device_samsung_i9300" path="device/samsung/i9300" remote="github" />
-			<project name="ArchiDroid/android_device_samsung_smdk4412-common" path="device/samsung/smdk4412-common" remote="github" />
-			<project name="ArchiDroid/android_hardware_samsung" path="hardware/samsung" remote="github" />
-			<project name="ArchiDroid/ArchiKernel" path="kernel/samsung/smdk4412" remote="github" revision="smdk4412" />
+			<project name="CyanogenMod/android_packages_apps_SamsungServiceMode" path="packages/apps/SamsungServiceMode" remote="github" clone-depth="1" />
+			<project name="cix1/proprietary_vendor_samsung" path="vendor/samsung" remote="github" clone-depth="1" />
+			<project name="cix1/android_device_samsung_i9300" path="device/samsung/i9300" remote="github" clone-depth="1" />
+			<project name="ArchiDroid/android_device_samsung_smdk4412-common" path="device/samsung/smdk4412-common" remote="github" clone-depth="1" />
+			<project name="ArchiDroid/android_hardware_samsung" path="hardware/samsung" remote="github" clone-depth="1" />
+			<project name="ArchiDroid/ArchiKernel" path="kernel/samsung/smdk4412" remote="github" revision="smdk4412" clone-depth="1" />
 		<!-- /i9300 -->
 	<!-- /Devices -->
 </manifest>
